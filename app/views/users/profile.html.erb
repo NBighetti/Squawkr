@@ -1,24 +1,39 @@
-<h1><%= @user.username %>.. is logged in</h1>
+<body id="profilePage">
 
-<ul>
-  <% @user.squawks.each do |squawk| %>
-<li>
-  <%= form_tag("/squawks/#{ squawk.id }", method: :delete) do %>
-  <%= submit_tag "Delete"%>
-  <% end %>
-  <%= squawk.message %>
-</li>
+<div class="row">
+  <nav class="twelve columns profileNav">
+    <h3 class="profileName">
+      <%= @user.username %>
+    </h3>
+    <%= form_tag('/log_out', method: :delete) do %>
+      <% submit_tag "Sign-Out", :class => "profileLogOut" %>
+    <% end %>
+  </nav>
+</div>
 
-<%end%>
+<div class="row">
+  <div class="twelve columns">
+    <%= form_for @squawk do |f|%>
+      <%= f.label :message %>
+      <%= f.text_field :message %>
+      <br>
+      <%= f.submit %>
+    <% end %>
+    <ul>
+      <% @user.squawks.each do |squawk| %>
+        <li>
+          <%= squawk.message %>
+        </li>
+        <%= form_tag("/squawks/#{ squawk.id }", method: :delete) do %>
+        <%= submit_tag "Delete"%>
+        <% end %>
+      <%end%>
+    </ul>
+  </div>
+</div>
+<footer>
+  <div class="four columns">
 
-</ul>
-
-<%= form_tag('/log_out', method: :delete) do %>
-  <% submit_tag "Log-Out" %>
-<% end %>
-
-<%= form_for @squawk do |f|%>
-  <%= f.label :message %>
-  <%= f.text_field :message %>
-  <%= f.submit %>
-<% end %>
+  </div>
+</footer>
+</body>

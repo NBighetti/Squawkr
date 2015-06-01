@@ -1,0 +1,238 @@
+$signinFont: 'Comfortaa';
+$font: blue;
+
+#welcomeBody {
+  height: 100%;
+  width: 100%;
+  background-image: url('http://www.adweek.com/socialtimes/files/2013/03/social-media-planet.jpg');
+  //background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#profilePage{
+  height: 100%;
+  width: 100%;
+  background-image:
+  url('http://i.imgur.com/23RB5Pf.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-attachment: fixed;
+}
+
+nav{
+  height: 55px;
+  background-color: rgba(72, 162, 229, .8);
+}
+
+nav.login{
+  background-color: rgba(72, 162, 229, .8);
+}
+
+nav label, legend{
+  display: inline-block;
+}
+
+nav.login h1 {
+  display: inline-block;
+  font-family: $signinFont;
+  font-size: 45px;
+  color: white;
+  margin: 0px;
+  width: 200px;
+
+}
+
+.navLogin {
+  width: auto;
+  display: block;
+  float: right;
+  margin: 5px 10px 5px 0px;
+}
+.navLogin input[type="submit"]{
+  margin: 5px 10px 5px 0px;
+}
+
+.profileNav {
+  height: 50px;
+}
+
+.profileName {
+  color: white;
+  display: block;
+  float: left;
+  font-size: 30px;
+  margin: 5px 0px 5px 10px;
+}
+
+.profileLogOut {
+  border-color: white !important;
+  color: white !important;
+  display: block;
+  font-size: 20px;
+  float: right;
+  margin: 7.5px 10px 7.5px 0;
+}
+
+.profileLogOut:hover {
+  color: rgba(255, 0, 0, .75) !important;
+}
+
+li {
+  list-style-type: none;
+}
+// branded skeleton code
+// BUTTON STYLES
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: $font;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+  // letter-spacing: .1rem;
+  font-family: $signinFont;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid $font;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: rgba(255, 0, 0, 1);
+  border-color: $font;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: $font;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: $font;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+// branded skeleton code
+// INPUT STYLES
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+  color: $font;
+  }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+@media only screen and (max-width:650px){
+
+  // branded skeleton code
+  // BUTTON STYLES
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  // branded skeleton code
+  // INPUT STYLES
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    height: 30px;
+    padding: 0px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  }
+}
